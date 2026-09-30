@@ -9,4 +9,4 @@ Resume
 Projects
 Contact
 
-My URL: 
+My URL: https://wgilder-pixel.github.io/myfirstportfolio/
