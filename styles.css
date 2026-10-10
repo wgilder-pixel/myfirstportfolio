@@ -18,9 +18,10 @@ body {
         "footer";
     background-color: #2A0048;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
 }
+
 /* HEADER */
 header {
     grid-area: header;
@@ -28,6 +29,18 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+}
+h1 {
+    color: #D50048;
+    font-size: 36px;
+}
+h2 {
+    color: #D50048;
+    font-size: 28px;
+}
+h3 {
+    color: #A90072;
+    font-size: 22px;
 }
 /* NAVIGATION */
 nav {
