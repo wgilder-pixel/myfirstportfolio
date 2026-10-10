@@ -9,5 +9,99 @@ carmine red #D50048
 
 /* GLOBAL (base) MOBILE FIRST */
 body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
     background-color: #2A0048;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/* HEADER */
+header {
+    grid-area: header;
+    background-color: #560072;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* NAVIGATION */
+nav {
+    grid-area: nav;
+    background-color: #560072;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin: 0 10px;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #D50048;
+}
+
+/* MAIN CONTENT */
+main {
+    grid-area: main;
+    padding: 20px;
+}
+h2 {
+    color: #D50048;
+}
+h3 {
+    color: #A90072;
+}
+
+/* PROJECT */
+.project-card {
+    background-color: #560072;
+    color: white;
+    border: 2px solid #A90072;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* LARGE SCREEN */
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "footer footer";
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    main {
+        padding: 30px;
+    }
+    footer {
+        grid-area: footer;
+    }
 }
