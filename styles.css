@@ -28,25 +28,30 @@ header {
     background-color: #560072;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 35px 20px;
+    border-bottom: 4px solid #D50048;
 }
 h1 {
-    color: #D50048;
+    color: white;
     font-size: 36px;
 }
 h2 {
-    color: #D50048;
+    color: white;
     font-size: 28px;
+    border-bottom: 2px solid #A90072;
+    padding-bottom: 8px;
+    border-left: 4px solid #D50048;
+    padding-left: 12px;
 }
 h3 {
-    color: #A90072;
+    color: white;
     font-size: 22px;
 }
 /* NAVIGATION */
 nav {
     grid-area: nav;
-    background-color: #560072;
-    padding: 10px;
+    background-color: #A90072;
+    padding: 15px;
 }
 nav ul {
     list-style: none;
@@ -64,22 +69,35 @@ nav a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 12 px;
+    margin: 5px;
+    border-radius: 10px;
 }
 nav a:hover {
-    background-color: #D50048;
+    background-color: #000000;
 }
 
 /* MAIN CONTENT */
 main {
     grid-area: main;
-    padding: 20px;
+    padding: 30px;
+    line-height: 1.7;
+    color: white;
 }
-h2 {
+main a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #D50048;
+}
+main a:hover {
     color: #D50048;
 }
-h3 {
-    color: #A90072;
+main section {
+    background-color: #560072;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #A90072;
+    border-radius: 15px;
 }
 
 /* PROJECT */
@@ -87,8 +105,12 @@ h3 {
     background-color: #560072;
     color: white;
     border: 2px solid #A90072;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 20px;
     margin-bottom: 20px;
+}
+.project-card:hover {
+    border-color: #D50048;
 }
 /* FOOTER */
 footer {
@@ -96,7 +118,8 @@ footer {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
+    border-top: 4px solid #A90072;
 }
 
 /* LARGE SCREEN */
